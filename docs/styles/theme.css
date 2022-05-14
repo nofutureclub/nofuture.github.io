@@ -1,0 +1,330 @@
+html, body {
+  background-color: #FFFFFF;
+  color: #0A0A0A;
+  font-family: "Open Sans", Arial;
+  margin: 0;
+  scroll-behavior: smooth; 
+}
+
+iframe {
+  display: none;
+}
+
+a, a:hover, a:active, a:visited {
+  color: #0A0A0A;
+  text-decoration: underline;
+}
+
+.hide {
+  display: none !important;
+}
+
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+
+.text-success {
+  color: #06a700
+}
+
+.text-warning {
+  color: #c59100
+}
+
+.text-danger {
+  color: #c20f02
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-solid,
+.btn-solid:hover,
+.btn-solid:active,
+.btn-solid:visited {
+  border: 0;
+  color: #FFFFFF;
+}
+
+.btn-outline {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.btn-solid.btn-success,
+.btn-solid.btn-success:hover,
+.btn-solid.btn-success:active,
+.btn-solid.btn-success:visited {
+  background-color: #008800;
+}
+
+.btn-outline.btn-success,
+.btn-outline.btn-success:hover,
+.btn-outline.btn-success:active,
+.btn-outline.btn-success:visited {
+  border-color: #008800;
+  color: #008800;
+}
+
+.btn-solid.btn-danger,
+.btn-solid.btn-danger:hover,
+.btn-solid.btn-danger:active,
+.btn-solid.btn-danger:visited {
+  background-color: #EC131D;
+}
+
+.btn-outline.btn-danger,
+.btn-outline.btn-danger:hover,
+.btn-outline.btn-danger:active,
+.btn-outline.btn-danger:visited {
+  border-color: #EC131D;
+  color: #EC131D;
+}
+
+.btn-solid.btn-primary, 
+.btn-solid.btn-primary:hover, 
+.btn-solid.btn-primary:active, 
+.btn-solid.btn-primary:visited {
+  background-color: #9456FF;
+}
+
+.btn-outline.btn-primary, 
+.btn-outline.btn-primary:hover, 
+.btn-outline.btn-primary:active, 
+.btn-outline.btn-primary:visited {
+  border-color: #9456FF;
+  color: #9456FF;
+}
+
+.notification {
+  bottom: 20px;
+  color: #FFFFFF;
+  font-size: 12px;
+  left: 20px;
+  position: fixed;
+  right: 20px;
+  z-index: 10000;
+}
+
+.notification div {
+  border: 1px solid #222222;
+  margin: auto;
+  max-width: 375px;
+  padding: 20px 30px;
+}
+
+.notification a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.notification div::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free"; font-weight: 900;
+  padding-right: 10px;
+}
+
+.notification.notification-info div {
+  background-color: #004688;
+}
+
+.notification.notification-error div {
+  background-color: #880000;
+}
+
+.notification.notification-error div::before {
+  content: "\f057";
+}
+
+.notification.notification-success div {
+  background-color: #008800;
+}
+
+.notification.notification-success div::before {
+  content: "\f058";
+}
+
+.head {
+  align-items: center;
+  display: flex;
+  font-size: 13px;
+  margin: auto;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.head a {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.head .left {
+  flex-grow: 1;
+}
+
+.head .left .logo {
+  display: block;
+  float: left;
+  height: 70px;
+}
+
+.head .left .logo img {
+  height: 100%;
+}
+
+.head .center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.head .center .logo {
+  display: block;
+  float: left;
+  height: 70px;
+  margin: 0 20px;
+}
+
+.head .center .logo img {
+  height: 100%;
+}
+
+.head .right {
+  line-height: 30px;
+  text-align: right;
+}
+
+.head .right a {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.head .right .btn {
+  border-radius: 0;
+}
+
+.body h1 {
+  text-transform: uppercase;
+}
+
+.body p {
+  font-size: 13px;
+  line-height: 26px;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.foot {
+  padding: 40px 0 0;
+  text-align: center;
+}
+
+.foot h3 {
+  font-size: 26px;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+.foot .masthead {
+  background-color: #000000;
+  color: #FFFFFF;
+  margin-top: 40px;
+  padding: 40px 0;
+}
+
+.foot .social {
+  background-color: #FFA800;
+  border-radius: 50%;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 10px;
+  text-align: center;
+  width: 40px;
+}
+
+.foot .social.image {
+  position: relative;
+  top: 14px;
+}
+
+.foot .social img {
+  height: 40px;
+}
+
+.foot .masthead a {
+  color: #FFFFFF;
+}
+
+.foot .masthead div {
+  margin-top: 20px;
+}
+
+.newsletter {
+  background: rgb(252,94,102);
+  background: linear-gradient(90deg, rgba(252,94,102,1) 0%, rgba(239,99,132,1) 44%, rgba(226,106,171,1) 100%);
+  color: #FFFFFF;
+  padding: 50px 15px 50px 15px;
+  text-align: center;
+}
+
+.newsletter h2 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.newsletter p {
+  font-size: 15px;
+  padding: 0 0 20px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.newsletter form input {
+  padding: 10px;
+}
+
+.newsletter form button {
+  padding: 10px 30px;
+}
+
+@media(max-width: 820px) {
+  .head {
+    display: block;
+  }
+
+  .head .left {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+  }
+
+  .head .right {
+    padding-top: 25px;
+    text-align: center;
+  }
+}
+
+@media(max-width: 685px) {
+  .head .right .btn {
+    display: block;
+    margin: 10px 0;
+  }
+}
