@@ -6,8 +6,16 @@
   display: none;
 }
 
+.section {
+  padding: 0 10px;
+}
+
 .section-1 {
   text-align: center;
+}
+
+.section-1 h1 {
+  font-size: 30px;
 }
 
 .section-1 img {
@@ -19,4 +27,10 @@
   display: inline-block;
   padding: 20px 40px;
   text-decoration: none;
+}
+
+@media(max-width: 767px) {
+  .section-1 h1 {
+    font-size: 20px;
+  }
 }
