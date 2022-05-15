@@ -46,6 +46,7 @@
 }
 
 .section-3 .btn {
+  box-sizing: border-box;
   display: inline-block;
   padding: 20px 40px;
   text-decoration: none;
