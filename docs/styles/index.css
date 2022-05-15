@@ -1,12 +1,10 @@
-.connected {
-  display: none;
-}
-
-.holder {
+.connected, .holder, .nonholder {
   display: none;
 }
 
 .section {
+  margin: auto;
+  max-width: 700px;
   padding: 0 10px;
 }
 
@@ -23,10 +21,39 @@
   width: 100%;
 }
 
-.section-1 .btn {
+.section-2 .loading {
+  text-align: center;
+}
+
+.section-2 .answer {
+  border: 1px solid #333333;
+  margin: 0 auto 10px;
+  padding: 20px;
+}
+
+.section-2 .answer h6 {
+  margin: 0;
+}
+
+.section-3 {
+  text-align: center;
+}
+
+.section-3 textarea {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+}
+
+.section-3 .btn {
   display: inline-block;
   padding: 20px 40px;
   text-decoration: none;
+  width: 100%;
+}
+
+.section-3 .btn:disabled {
+  background-color: #CCCCCC;
 }
 
 @media(max-width: 767px) {

@@ -35,6 +35,11 @@
         <div class="section section-1">
           <img src="/images/nofutureclub.png" />
           <h1>What do you want out of your future?</h1>
+        </div>
+        <div class="section section-2">
+          <div class="answers"></div>
+        </div>
+        <div class="section section-3">
           <div class="disconnected">
             <a class="btn btn-solid btn-primary" data-do="connect" data-on="click">
               Connect Your Ethereum Wallet
@@ -48,15 +53,31 @@
               </div>
             </div>
             <div class="holder">
-              Welcome 3landers Person!
+              <form id="google-form" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSdHb21KWg8saT8rknR3qkVInAbm9mcSiHFL7RLu0XWGpjSj8g/formResponse" target="google-frame">
+                <div class="form-row">
+                  <textarea required name="entry.615449439" rows="5"></textarea>
+                </div>
+                <input id="input-address" type="hidden" name="entry.921870121" value="" />
+                <input type="hidden" name="dsdoc" value="true" />
+                <input type="hidden" name="fvv" value="1" />
+                <input type="hidden" name="pageHistory" value="0" />
+                <input type="hidden" name="fbzx" value="5135469651063524689" />
+                <input type="hidden" name="partialResponse" value='[null,null,"5135469651063524689"]' />
+                <button class="btn btn-solid btn-primary" type="submit" disabled>Submit</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer class="foot">
-      
-    </footer>
+    <footer class="foot"></footer>
+    <iframe id="google-frame" name="google-frame" src="/_blank.html" style="display: none;"></iframe>
+    <template id="tpl-answer">
+      <div class="answer">
+        <h6>{AUTHOR} &mdash; {DATE}</h6>
+        <div>{MESSAGE}</div>
+      </div>
+    </template>
     <script src="//cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script type="text/javascript" src="/scripts/lib/doon.js"></script>
     <script type="text/javascript" src="/scripts/lib/blockapi.js"></script>
